@@ -1,0 +1,11 @@
+Generate text on the basis of the provided sentences. Use my sentences if possible.
+Follow these basic rules basic:
+1. Each sentence 25 words.
+2. Use we as subj pronoun
+3. I will use a similar yaml and markdown syntax to write answers. Parse it and convert in latex syntax e.g., # Introduction should be converted to \begin{section} introduction
+4. Use present simple
+Also follows Latex rules:
+- Use longtable with M{0.x\linewidth} as cell type. Use vertical lines, and \\ \hline for each row
+- Do not write\begin{document}, just give me latex text
+- Always put labels and captions in images, sections, and tables
+[Table] write a table: [caption] is the caption, [head] the comma separated values

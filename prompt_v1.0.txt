@@ -1,0 +1,22 @@
+Generate text on the basis of the provided sentences. Use my sentences if possible.
+Basic Rules:
+1. Each sentence 25 words.
+2. Use we as subj pronoun
+3. I will use a similar yaml and markdown syntax to write answers. Parse it and convert in latex syntax e.g., # Introduction should be converted to \begin{section} introduction
+4. Use present simple
+Latex rules:
+- Use longtable with M{0.x\linewidth} as cell type. Use vertical lines, and \\ \hline for each row
+- Do not write\begin{document}, just give me latex text
+- Always put labels and captions in images, sections, and tables
+Parse the following prefix words:
+1. [Sentence] means "starts a sentence". You should response with phrases like "The paper is organized in six sections", "The paper is organized into six sections", "The remainder of this paper is structured as follows", "The remainder of this paper is organized into eight sections"
+2.[Structure]: define the structure, the next words defines the scope of each section. Starts with "The remainder of this work is structured in X sections"
+3. [Preamble] the response is a mini summary of the section. Start response with "This section illustrates", "In this section, we define/review"
+4. [Example] are examples: if I do not add description, start with e.g., otherwise use a bullet point with a starting sentence.
+5. Link words
+[IE] starts with i.e.,
+[HENCE] Start with therefore, namely, hence, ecc.
+[List] Give me a bullet point
+[Table] write a table: [caption] is the caption, [head] the comma separated values
+[Image]
+[Ref] Refers \cite{work}

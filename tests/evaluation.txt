@@ -1,0 +1,3 @@
+PromptTest, Output, Considerations
+t1, use basic rules as content for the first response. Do not understand that I want GPT apply these rules.,  try to say Follow these basic rules
+t1, use basic rules as content for the first response. Do not understand that I want GPT apply these rules.,  try to avoid newlines
